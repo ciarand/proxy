@@ -7,8 +7,14 @@ A development proxy with logging and redirect-rewriting
 Installation
 ------------
 
+Download a prebuilt binary for your platform and architecture from the
+link:https://github.com/ciarand/proxy/releases[release page].
+
+Or, build from source:
+
 [source,bash]
 ----
+# from source
 go get -u github.com/ciarand/proxy
 ----
 
