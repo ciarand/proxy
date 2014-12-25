@@ -21,19 +21,14 @@ Usage
 proxy -from=https://www.google.com -to=http://0.0.0.0:8080
 
 # and in another, run curl:
-curl localhost:8080 | wc -l # rearranged for clarity:
+curl -s http://localhost:8080/ | head -c 15
+<!doctype html>
 
-# result from proxy shell:
-INFO[0040] request started                               client_address=[::1]:58732 method=GET request=/
-INFO[0040] request complete                              elapsed=534.38243ms status=200
-
-# result from curl shell:
-% Total    % Received % Xferd  Average Speed   Time     Time     Time  Current
-                               Dload   Upload  Total    Spent    Left  Speed
-100 19783    0 19783    0     0  36877      0 --:--:-- --:--:-- --:--:-- 36908
-8
+# result from proxy shell (shortened for width):
+INFO[0022] request started   client_address=[::1]:58988 method=GET uri=/
+INFO[0023] request complete  elapsed=624.644152ms status=200
 ----
 
 License
 -------
-include::LICENSE[]
+See the link:LICENSE[LICENSE] file.
